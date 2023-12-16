@@ -2,6 +2,9 @@ from flask import Flask, jsonify, request
 import os
 import json
 from apis1 import Api
+from dotenv import load_dotenv
+
+load_dotenv()
 
 app = Flask(__name__)
 
