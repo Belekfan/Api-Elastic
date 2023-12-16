@@ -18,6 +18,8 @@ for i in offsets["offsets"]:
 
 api1=Api(apilist)
 
+api1.str()
+
 @app.route('/choose')
 def choose():
      offset = request.args.get('offset')
