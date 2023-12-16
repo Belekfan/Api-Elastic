@@ -11,12 +11,12 @@ class Api:
         print("Apilist: "+str(self.apilist[0]))
 
 
-    def find(self,addr,str):
+    def find(self,addr,str1):
         if addr=="api1":
-            resp=requests.get(str(self.apilist[0])+"/search/docs/?searchs="+str(str))
+            resp=requests.get(str(self.apilist[0])+"/search/docs/?searchs="+str(str1))
             return resp.text
         elif addr=="api2":
-             resp=requests.get(str(self.apilist[1])+"/search?searchs="+str(str))
+             resp=requests.get(str(self.apilist[1])+"/search?searchs="+str(str1))
              return resp.text
 
 
