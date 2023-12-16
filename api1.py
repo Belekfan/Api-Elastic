@@ -14,7 +14,7 @@ def choose():
      searchs = request.args.get('searchs')
      for i in data["cve-data-web"]:
             if searchs==i["name"]:
-              return jsonify(i)
+              return i
 
 
 
