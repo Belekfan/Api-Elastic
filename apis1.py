@@ -8,7 +8,7 @@ class Api:
         self.apilist=["https://api-elastic-api1.onrender.com"]
         
     def __str__(self) -> str:
-        print("Apilist: "+self.apilist[0])   
+        print("Apilist: "+str(self.apilist[0]))
 
 
     def find(self,addr,str):
