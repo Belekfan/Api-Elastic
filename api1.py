@@ -4,18 +4,22 @@ import json
 
 app = Flask(__name__)
 
-arrmain=[]
+
 f=open("data1.json")
 
 data=json.load(f)
 
-@app.route('/search/docs')
-def choose():
+@app.route('/search/docs/')
+def choise():
+     arrmain=[]
      searchs = request.args.get('searchs')
      for i in data["cve-data-web"]:
-            if searchs==i["name"]:
-              return i
-
+            if searchs in i["name"]:
+                 arrmain.append(i)
+      
+     if len(arrmain)==0:
+          return "not found"
+     return arrmain
 
 
 @app.route('/')
