@@ -27,7 +27,7 @@ def choose():
         arrtemp=i.split("&&")
         if offset==arrtemp[0]:
             conc=api1.find(arrtemp[1],searchs)
-            return jsonify(conc)
+            return conc
 
 
 
