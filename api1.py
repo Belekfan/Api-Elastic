@@ -9,7 +9,7 @@ f=open("data1.json")
 
 data=json.load(f)
 
-@app.route('/search-web/docs/')
+@app.route('/search/docs/')
 def choise():
      arrmain=[]
      searchs = request.args.get('searchs')
