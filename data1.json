@@ -1,5 +1,5 @@
 {
-"cve-data-web":[
+"data-web":[
 
 {"name":"Cross-site Scripting (XSS): Reflected, Persistent and DOM-based XSS","description":""},
 {"name":"A type of computer security vulnerability typically found in web applications. XSS enables attackers to inject client-side scripts into web pages viewed by other users. A cross-site scripting vulnerability may be used by attackers to bypass access controls such as the same-origin policy.","description":""},
