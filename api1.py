@@ -9,11 +9,11 @@ f=open("data1.json")
 
 data=json.load(f)
 
-@app.route('/search/docs/')
+@app.route('/search-web/docs/')
 def choise():
      arrmain=[]
      searchs = request.args.get('searchs')
-     for i in data["cve-data-web"]:
+     for i in data["data-web"]:
             if searchs in i["name"]:
                  arrmain.append(i)
       
