@@ -23,10 +23,11 @@ api1=Api(apilist)
 def choose():
      offset = request.args.get('offset')
      searchs = request.args.get('searchs')
+     subject = request.args.get('subject')
      for i in arrmain:
         arrtemp=i.split("&&")
         if offset==arrtemp[0]:
-            conc=api1.find(arrtemp[1],searchs)
+            conc=api1.find(arrtemp[1],searchs,subject)
             return conc
 
 
