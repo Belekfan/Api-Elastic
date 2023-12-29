@@ -9,7 +9,11 @@ f=open("data1.json")
 
 data=json.load(f)
 
-@app.route('/search/docs/')
+f2=open("data2.json")
+
+data2=json.load(f2)
+
+@app.route('/search/docs-web/')
 def choise():
      arrmain=[]
      searchs = request.args.get('searchs')
@@ -21,6 +25,17 @@ def choise():
           return "not found"
      return arrmain
 
+@app.route('/search/docs-os/')
+def choise2():
+     arrmain=[]
+     searchs = request.args.get('searchs')
+     for i in data2["data-os"]:
+            if searchs in i["name"]:
+                 arrmain.append(i)
+      
+     if len(arrmain)==0:
+          return "not found"
+     return arrmain
 
 @app.route('/')
 def hello_world():
