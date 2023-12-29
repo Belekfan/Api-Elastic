@@ -1,0 +1,12 @@
+{    
+"data-os":[{"name":"- Remote Code Execution: Attackers can remotely execute or modify code on the device. It can lead to other attacks like privilege escalation because they can run any code they want.","description":""},
+{"name":"","description":""},
+{"name":"- Privilege Escalation: Attackers can obtain more privileges than what they should have. The goal is to get administrator rights and be able to perform certain actions. Here is an article to better understand the role of privilege escalation in a cyberattack.","description":""},
+{"name":"","description":""},
+{"name":"- Denial of Service: A DoS attack floods a system and a network with traffic. It exhausts the system resources and bandwidth so itâ€™s unable to process real usersâ€™ requests. When multiple systems are used for the attack, we talk about Distributed Denial of Service. DoS attacks are sometimes a diversion for other attacks. While you focus on the DoS attack, another attack can penetrate your system.","description":""},
+{"name":"","description":""},
+{"name":"- Memory Corruption: The memory of the computer is compromised. Attackers can access it to collect sensitive data.","description":""},
+{"name":"","description":""},
+{"name":"- Overflow: The OS cannot control the amount of code generated. It results in crash, data loss or an unexpected behaviour.","description":""}],
+"source":"https://laki-edimo.medium.com/five-os-vulnerabilities-1d9fafb1c87b"
+}
