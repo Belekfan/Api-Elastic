@@ -5,7 +5,7 @@ import requests
 class Api:
     def __init__(self,apilist):
         
-        self.apilist=["https://api-elastic-api1.onrender.com"]
+        self.apilist=[""]
         
     def __str__(self) -> str:
         print("Apilist: "+str(self.apilist[0]))
