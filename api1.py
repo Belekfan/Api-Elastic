@@ -13,6 +13,10 @@ f2=open("data2.json")
 
 data2=json.load(f2)
 
+f3=open("data3.json")
+
+data2=json.load(f3)
+
 @app.route('/search/docs-web/')
 def choise():
      arrmain=[]
@@ -30,6 +34,18 @@ def choise2():
      arrmain=[]
      searchs = request.args.get('searchs')
      for i in data2["data-os"]:
+            if searchs in i["name"]:
+                 arrmain.append(i)
+      
+     if len(arrmain)==0:
+          return "not found"
+     return arrmain
+
+@app.route('/search/docs-mobile/')
+def choise3():
+     arrmain=[]
+     searchs = request.args.get('searchs')
+     for i in data3["data-mobile"]:
             if searchs in i["name"]:
                  arrmain.append(i)
       
